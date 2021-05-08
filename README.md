@@ -1,4 +1,4 @@
-# BlockVote
+# BlockVote 🗳️
 
 A decentralized voting system based on Ethereum blockchain technology.
 
