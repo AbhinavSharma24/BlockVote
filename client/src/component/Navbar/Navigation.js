@@ -12,8 +12,13 @@ export default function Navbar() {
       </NavLink>
       <ul
         className="navbar-links"
-        style={{ width: "35%", transform: open ? "translateX(0px)" : "" }}
+        style={{ width: "40%", transform: open ? "translateX(0px)" : "" }}
       >
+        <li>
+          <NavLink to="/Election" activeClassName="nav-active">
+            Election
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/Registration" activeClassName="nav-active">
             <i className="far fa-registered" /> Registration

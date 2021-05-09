@@ -1,0 +1,51 @@
+.heading {
+    font-size: 3.5em;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+.caption {
+    font-size: 1.2em;
+}
+
+.landingBtn1{
+    background-color: #fff;
+    font-size: 1.1em;
+    padding: 12px 8px;
+    border-radius: 5px;
+    color: #222222;
+}
+.landingBtn1:hover{
+    background-color: #444;
+    color: #fff;
+}
+
+.landingBtn2{
+    background-color: #444;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding: 12px 4px;
+}
+.landingBtn2:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.NavLinkBtn1{
+    color: #1f1f1f;
+    padding: 12px;
+}
+
+.NavLinkBtn1:hover{
+    color: #fff;
+    padding: 12px;
+}
+
+.NavLinkBtn2{
+    padding: 12px;
+}
+
+.NavLinkBtn2:hover{
+    color: #fff;
+    padding: 12px;
+}

@@ -10,6 +10,9 @@ import Registration from "./component/Registration/Registration";
 import AddCandidate from "./component/Admin/AddCandidate/AddCandidate";
 import Verification from "./component/Admin/Verification/Verification";
 import test from "./component/test";
+
+import Landing from "./component/Landing/Landing";
+
 // import StartEnd from "./component/Admin/StartEnd/StartEnd";
 
 import Footer from "./component/Footer/Footer";
@@ -22,7 +25,8 @@ export default class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/Election" component={Home} />
             <Route exact path="/AddCandidate" component={AddCandidate} />
             <Route exact path="/Voting" component={Voting} />
             <Route exact path="/Results" component={Results} />

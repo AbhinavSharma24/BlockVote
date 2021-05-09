@@ -17,6 +17,11 @@ export default function NavbarAdmin() {
         style={{ transform: open ? "translateX(0px)" : "" }}
       >
         <li>
+          <NavLink to="/Election" activeClassName="nav-active">
+            Election
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/AddCandidate" activeClassName="nav-active">
             Add Candidate
           </NavLink>
