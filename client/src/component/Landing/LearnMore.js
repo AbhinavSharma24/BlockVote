@@ -1,7 +1,5 @@
 // Node modules
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-
 
 // Components
 import Navbar from "../Navbar/Navigation";
@@ -15,7 +13,7 @@ import Election from "../../contracts/Election.json";
 import "./Landing.css";
 
 // const buttonRef = React.createRef();
-export default class Landing extends Component {
+export default class LearnMore extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -111,24 +109,48 @@ export default class Landing extends Component {
             <>
                 {this.state.isAdmin ? <NavbarAdmin /> : <Navbar />}
                 <br /> <br />
-                <div>
-                    <p className="heading">Hello, Voter!</p>
-                    <p className="caption"> Welcome to the new age of voting.</p>
-                    <br/> <br/> 
-                    <hr className="horBreak"  style={{width: '50%'}}/>
-                    <br/> <br />
+                <div classNameName="container align-middle">
 
-                    <button className="landingBtn1">
-                        <NavLink to="/LearnMore" className="NavLinkBtn1">
-                            Learn More
-                        </NavLink>
-                    </button> &emsp;
-                    <button className="landingBtn2">
-                        <NavLink to="/Election" className="NavLinkBtn2">
-                            Explore Election
-                        </NavLink>
-                    </button>
-                </div>
+                  <div className="row">
+
+                    <div className="col-lg-8">
+
+                      <h2 className="headingLearn">How does BlockVote works?</h2>
+
+                      <br/>
+                      <hr className="horBreak" style={{width: '50%'}}/>
+
+                      <img className="img-fluid" src="https://www.aljazeera.com/wp-content/uploads/2021/04/AP_21096261246310.jpg?resize=1200%2C630"
+                        alt="Voters standing in a queue to cast vote"/>
+
+                      <hr className="horBreak" style={{width: '50%'}}/>
+
+                      <br/>
+                      <p className="lead">Standing in the queue and waiting for your turn to cast vote is a part of a history now. </p>
+                      <br/>
+                      <p className="content1">We proposes a new system of voting where everything is transparent and there is no question
+                        of tampering, the voting machine as it doesn't exists in first place.</p>
+                      <br/>
+                      <p className="content1">BlockVote is the upcoming way of casting vote where all the votes will be stored in the Blockchain, which
+                        makes the system tamper proof and completely transparent.</p>
+
+                      <br/>
+                      <div className="containerLearn2 general" role="alert">
+                        <span>This is still under various trials! Please expect a few bugs.</span>
+                      </div>
+                      <br/>
+
+                      <p className="lead2" >How to use?</p>
+
+                      <p className="content1">1. Install MetaMask Browser Extension.</p>
+                      <p className="content1">2. Make sure that the Ethereum Account which you've been assigned is imported into MetaMask.</p>
+                      <p className="content1">3. Explore election section and cast your vote!</p>
+                      <p className="content1">Regards
+                      </p><br/>
+
+                    </div>
+                  </div>
+                </div>    
             </>
         );
     }

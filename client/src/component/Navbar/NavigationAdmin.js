@@ -9,7 +9,7 @@ export default function NavbarAdmin() {
     <nav>
       <div className="header">
         <NavLink to="/">
-          <i className="fab fa-hive" /> BlockVote
+          <i class="fas fa-vote-yea"/> BlockVote
         </NavLink>
       </div>
       <ul

@@ -1,16 +1,30 @@
+/* body{
+    background-image: none;
+} */
+
 .heading {
     font-size: 3.5em;
     font-weight: 500;
     color: #1f1f1f;
+    margin-left: 120px;
 }
 .caption {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.horBreak{
+    margin-left: 120px;
+    margin-right: 120px;
+    border-top: 0.01px solid rgb(219, 219, 219);
 }
 
 .landingBtn1{
     background-color: #fff;
     font-size: 1.1em;
     padding: 12px 8px;
+    margin-left: 120px;
     border-radius: 5px;
     color: #222222;
 }
@@ -48,4 +62,69 @@
 .NavLinkBtn2:hover{
     color: #fff;
     padding: 12px;
+}
+
+
+/* LearnMore CSS */
+
+.headingLearn {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #1f1f1f;
+    margin-left: 120px;
+}
+
+.img-fluid{
+    margin-left: 120px;
+    margin-top: 20px;
+    border: 1.8px solid #444444;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.lead{
+    margin-left: 120px;
+    width: 50%;
+    color: #1f1f1f;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.content1{
+    margin-left: 120px;
+    color: #1b1b1b;
+    padding: 5px;
+    font-size: 1.1em;
+    text-align: justify;
+    width: 50%;
+}
+
+.lead2{
+    margin-left: 120px;
+    width: 50%;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+/* .containerLearn {
+    background-color: #f2f2f2;
+    border-color: #1a1a1a;
+    border: 1px;
+    border-radius: 7px;
+    width: 50%;
+    padding: 10px;
+    margin-left: 120px;
+} */
+
+.containerLearn2 {
+    background-color: #fffbdd;
+    border-color: #1a1a1a;
+    border: 1px;
+    border-radius: 7px;
+    width: 50%;
+    padding: 10px;
+    margin-left: 120px;
 }

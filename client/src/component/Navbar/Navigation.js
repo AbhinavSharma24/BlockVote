@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav>
       <NavLink to="/" className="header">
-        <i className="fab fa-hive"></i> BlockVote
+        <i class="fas fa-vote-yea"/> BlockVote
       </NavLink>
       <ul
         className="navbar-links"

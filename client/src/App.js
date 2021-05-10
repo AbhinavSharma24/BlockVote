@@ -12,6 +12,7 @@ import Verification from "./component/Admin/Verification/Verification";
 import test from "./component/test";
 
 import Landing from "./component/Landing/Landing";
+import LearnMore from "./component/Landing/LearnMore";
 
 // import StartEnd from "./component/Admin/StartEnd/StartEnd";
 
@@ -26,6 +27,7 @@ export default class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Landing} />
+            <Route exact path="/LearnMore" component={LearnMore} />
             <Route exact path="/Election" component={Home} />
             <Route exact path="/AddCandidate" component={AddCandidate} />
             <Route exact path="/Voting" component={Voting} />
