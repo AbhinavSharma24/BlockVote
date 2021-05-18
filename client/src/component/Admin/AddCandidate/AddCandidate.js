@@ -126,21 +126,21 @@ export default class AddCandidate extends Component {
           <div className="container-item general">
             <form className="form">
               <label className={"label-ac"}>
-                Header
+                Candidate Name
                 <input
                   className={"input-ac"}
                   type="text"
-                  placeholder="eg. Marcus"
+                  placeholder="eg. Abhinav Sharma"
                   value={this.state.header}
                   onChange={this.updateHeader}
                 />
               </label>
               <label className={"label-ac"}>
-                Slogan
+                Organisation (Party)
                 <input
                   className={"input-ac"}
                   type="text"
-                  placeholder="eg. It is what it is"
+                  placeholder="eg. Indian Democratic Party"
                   value={this.state.slogan}
                   onChange={this.updateSlogan}
                 />

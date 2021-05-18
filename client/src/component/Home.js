@@ -293,6 +293,18 @@ export default class Home extends Component {
                           })}
                         />
                       </label>
+                      <label className="label-home">
+                        Location{" "}
+                        {errors.organizationName && <EMsg msg="*required" />}
+                        <input
+                          className="input-home"
+                          type="text"
+                          placeholder="eg. Okhla, Delhi - 110020"
+                          {...register("", {
+                            required: true,
+                          })}
+                        />
+                      </label>
                     </div>
                   </div>
                 </div>
