@@ -80,3 +80,17 @@ tr:nth-child(even) {
     width: 300px;
   }
 }
+
+
+
+
+.votes-tag2 {
+  text-align: left;
+}
+.vote-count2 {
+  margin-top: 11px;
+  padding: 5px;
+  font-size: 25px;
+  overflow-y: auto;
+  text-align: center;
+}

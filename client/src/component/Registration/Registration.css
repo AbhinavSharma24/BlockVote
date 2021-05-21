@@ -14,9 +14,9 @@
   display: block;
 }
 .btn-add {
-  width: 50%;
+  width: 40%;
+  font-size: 0.9em;
   padding: 1em;
-  float: inline-end;
   margin: 1em;
 }
 .note {

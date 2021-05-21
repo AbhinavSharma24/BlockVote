@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "https://AbhinavSharma24.github.io/BlockVote",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

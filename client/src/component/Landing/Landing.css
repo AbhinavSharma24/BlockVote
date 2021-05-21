@@ -21,7 +21,7 @@
 }
 
 .landingBtn1{
-    background-color: #fff;
+    background-color: transparent;
     font-size: 1.1em;
     padding: 12px 8px;
     margin-left: 120px;
@@ -127,4 +127,18 @@
     width: 50%;
     padding: 10px;
     margin-left: 120px;
+}
+
+/* Extra images */
+
+.collegeLogo{
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 12em;
+}
+
+.collegeLogo2{
+    margin-top: -560px;
+    margin-left: 800px;
+    width: 40em;
 }

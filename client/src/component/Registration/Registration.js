@@ -179,7 +179,7 @@ export default class Registration extends Component {
                       <input
                         className={"input-r"}
                         type="text"
-                        placeholder="eg. Ava"
+                        placeholder="eg. Abhinav"
                         value={this.state.voterName}
                         onChange={this.updateVoterName}
                       />{" "}
@@ -191,23 +191,23 @@ export default class Registration extends Component {
                       <input
                         className={"input-r"}
                         type="number"
-                        placeholder="eg. 9841234567"
+                        placeholder="eg. 9876543210"
                         value={this.state.voterPhone}
                         onChange={this.updateVoterPhone}
                       />
                     </label>
                   </div>
-                  <p className="note">
+                  {/* <p className="note">
                     <span style={{ color: "tomato" }}> Note: </span>
                     <br /> Make sure your account address and Phone number are
                     correct. <br /> Admin might not approve your account if the
                     provided Phone number nub does not matches the account
                     address registered in admins catalogue.
-                  </p>
+                  </p> */}
                   <button
                     className="btn-add"
                     disabled={
-                      this.state.voterPhone.length !== 10 ||
+                      this.state.voterPhone.length <= 10 ||
                       this.state.currentVoter.isVerified
                     }
                     onClick={this.registerAsVoter}
@@ -232,15 +232,29 @@ export default class Registration extends Component {
                 this.state.currentVoter.isRegistered
               )}
             </div>
-            {this.state.isAdmin ? (
+            {/* {this.state.isAdmin ? (
               <div
                 className="container-main"
                 style={{ borderTop: "1px solid" }}
               >
                 <small>TotalVoters: {this.state.voters.length}</small>
                 {loadAllVoters(this.state.voters)}
+
               </div>
-            ) : null}
+            ) : 
+            null} */}
+
+            {this.state.currentVoter.isRegistered ? (
+              <div
+                className="container-main"
+                style={{ borderTop: "1px solid" }}
+              >
+                <small>You have registered yourself successfully.</small>
+
+              </div>
+            ) : 
+            null}
+
           </>
         )}
       </>
@@ -250,7 +264,7 @@ export default class Registration extends Component {
 export function loadCurrentVoter(voter, isRegistered) {
   return (
     <>
-      <div
+      {/* <div
         className={"container-item " + (isRegistered ? "success" : "attention")}
       >
         <center>Your Registered Info</center>
@@ -284,7 +298,7 @@ export function loadCurrentVoter(voter, isRegistered) {
             <td>{voter.isRegistered ? "True" : "False"}</td>
           </tr>
         </table>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -292,7 +306,7 @@ export function loadAllVoters(voters) {
   const renderAllVoters = (voter) => {
     return (
       <>
-        <div className="container-list success">
+        {/* <div className="container-list success">
           <table>
             <tr>
               <th>Account address</th>
@@ -319,15 +333,15 @@ export function loadAllVoters(voters) {
               <td>{voter.isRegistered ? "True" : "False"}</td>
             </tr>
           </table>
-        </div>
+        </div> */}
       </>
     );
   };
   return (
     <>
-      <div className="container-item success">
+      {/* <div className="container-item success">
         <center>List of voters</center>
-      </div>
+      </div> */}
       {voters.map(renderAllVoters)}
     </>
   );
