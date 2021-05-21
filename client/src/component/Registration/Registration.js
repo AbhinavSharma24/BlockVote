@@ -197,24 +197,23 @@ export default class Registration extends Component {
                       />
                     </label>
                   </div>
-                  {/* <p className="note">
+                  <p className="note">
                     <span style={{ color: "tomato" }}> Note: </span>
-                    <br /> Make sure your account address and Phone number are
-                    correct. <br /> Admin might not approve your account if the
-                    provided Phone number nub does not matches the account
+                    <br /> Make sure your account address and phone number are
+                    correct. Admin might not approve your account if the
+                    provided phone number does not matches the account
                     address registered in admins catalogue.
-                  </p> */}
+                  </p>
                   <button
                     className="btn-add"
                     disabled={
                       this.state.voterPhone.length <= 10 ||
-                      this.state.currentVoter.isVerified
+                      this.state.currentVoter.isVerified ||
+                      this.state.currentVoter.isRegistered
                     }
                     onClick={this.registerAsVoter}
                   >
-                    {this.state.currentVoter.isRegistered
-                      ? "Update"
-                      : "Register"}
+                    Register
                   </button>
 
                   {this.state.currentVoter.isRegistered ? (
