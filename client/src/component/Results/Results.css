@@ -47,7 +47,7 @@ tr:nth-child(even) {
 }
 .winner-tag {
   text-align: left;
-  color: hotpink;
+  color: red;
 }
 .votes-tag {
   text-align: left;
@@ -79,18 +79,4 @@ tr:nth-child(even) {
   .container-winner {
     width: 300px;
   }
-}
-
-
-
-
-.votes-tag2 {
-  text-align: left;
-}
-.vote-count2 {
-  margin-top: 11px;
-  padding: 5px;
-  font-size: 25px;
-  overflow-y: auto;
-  text-align: center;
 }

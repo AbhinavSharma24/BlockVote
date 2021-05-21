@@ -131,8 +131,7 @@ export default class AddCandidate extends Component {
                   className={"input-ac"}
                   type="text"
                   placeholder="eg. Abhinav Sharma"
-                  // value={this.state.header}
-                  value="Arvind Kejriwal"
+                  value={this.state.header}
                   onChange={this.updateHeader}
                 />
               </label>
@@ -142,8 +141,7 @@ export default class AddCandidate extends Component {
                   className={"input-ac"}
                   type="text"
                   placeholder="eg. Indian Democratic Party"
-                  // value={this.state.slogan}
-                  value={"AAP"}
+                  value={this.state.slogan}
                   onChange={this.updateSlogan}
                 />
               </label>

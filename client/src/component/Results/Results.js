@@ -135,40 +135,6 @@ export default class Result extends Component {
   }
 }
 
-// function displayWinner(candidates) {
-//   const getWinner = (candidates) => {
-//     // Returns an object having maxium vote count
-//     let maxVoteRecived = 0;
-//     let winnerCandidate = [];
-//     for (let i = 0; i < candidates.length; i++) {
-//       if (candidates[i].voteCount > maxVoteRecived) {
-//         maxVoteRecived = candidates[i].voteCount;
-//         winnerCandidate = [candidates[i]];
-//       } else if (candidates[i].voteCount === maxVoteRecived) {
-//         winnerCandidate.push(candidates[i]);
-//       }
-//     }
-//     return winnerCandidate;
-//   };
-//   const renderWinner = (winner) => {
-//     return (
-//       <div className="container-winner general">
-//         <div className="winner-info">
-//           <p className="winner-tag">Winner!</p>
-//           <h2> {winner.header}</h2>
-//           <p className="winner-slogan">{winner.slogan}</p>
-//         </div>
-//         <div className="winner-votes">
-//           <div className="votes-tag">Total Votes: </div>
-//           <div className="vote-count">{winner.voteCount}</div>
-//         </div>
-//       </div>
-//     );
-//   };
-//   const winnerCandidate = getWinner(candidates);
-//   return <>{winnerCandidate.map(renderWinner)}</>;
-// }
-
 function displayWinner(candidates) {
   const getWinner = (candidates) => {
     // Returns an object having maxium vote count
@@ -188,13 +154,13 @@ function displayWinner(candidates) {
     return (
       <div className="container-winner general">
         <div className="winner-info">
-          <p>Winner:</p>
+          <p className="winner-tag">Winner!</p>
           <h2> {winner.header}</h2>
-          {/* <p className="winner-slogan">{winner.slogan}</p> */}
+          <p className="winner-slogan">{winner.slogan}</p>
         </div>
         <div className="winner-votes">
-          {/* <div className="votes-tag2">Total Votes: </div> */}
-          <div className="vote-count2"><p>({winner.voteCount} votes)</p></div>
+          <div className="votes-tag">Total Votes: </div>
+          <div className="vote-count">{winner.voteCount}</div>
         </div>
       </div>
     );
@@ -204,21 +170,21 @@ function displayWinner(candidates) {
 }
 
 export function displayResults(candidates) {
-  // const renderResults = (candidate) => {
-  //   return (
-  //     <tr>
-  //       <td>{candidate.id}</td>
-  //       <td>{candidate.header}</td>
-  //       <td>{candidate.voteCount}</td>
-  //     </tr>
-  //   );
-  // };
+  const renderResults = (candidate) => {
+    return (
+      <tr>
+        <td>{candidate.id}</td>
+        <td>{candidate.header}</td>
+        <td>{candidate.voteCount}</td>
+      </tr>
+    );
+  };
   return (
     <>
       {candidates.length > 0 ? (
         <div className="container-main">{displayWinner(candidates)}</div>
       ) : null}
-      {/* <div className="container-main" style={{ borderTop: "1px solid" }}>
+      <div className="container-main" style={{ borderTop: "1px solid" }}>
         <h2>Results</h2>
         <small>Total candidates: {candidates.length}</small>
         {candidates.length < 1 ? (
@@ -245,7 +211,7 @@ export function displayResults(candidates) {
             </div>
           </>
         )}
-      </div> */}
+      </div>
     </>
   );
 }

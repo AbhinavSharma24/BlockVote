@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import Navbar from "../Navbar/Navigation";
 import NavbarAdmin from "../Navbar/NavigationAdmin";
 
-import logo from "../img/college.png";
+// import logo from "../img/college.png";
 
 //Contracts
 import getWeb3 from "../../getWeb3";
@@ -108,7 +108,7 @@ export default class Landing extends Component {
           );
         }
         
-        const logo2 = "https://play-lh.googleusercontent.com/kzRlvO5ecVekzW_q5Da9m0J7opfJyqWFnKvC9vde5CGw_t7uwZISs1GW2e6GmFSSASvd"; 
+        // const logo2 = "https://play-lh.googleusercontent.com/kzRlvO5ecVekzW_q5Da9m0J7opfJyqWFnKvC9vde5CGw_t7uwZISs1GW2e6GmFSSASvd"; 
     
         return (
             <>
@@ -131,9 +131,9 @@ export default class Landing extends Component {
                             Explore Election
                         </NavLink>
                     </button>
-                    <br/><br/><br/>
+                    {/* <br/><br/><br/>
                     <img src={logo} className="collegeLogo" alt="Logo" />
-                    <img src={logo2} className="collegeLogo2" alt="Logo" />
+                    <img src={logo2} className="collegeLogo2" alt="Logo" /> */}
                 </div>
             </>
         );

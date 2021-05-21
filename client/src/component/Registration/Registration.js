@@ -216,6 +216,12 @@ export default class Registration extends Component {
                       ? "Update"
                       : "Register"}
                   </button>
+
+                  {this.state.currentVoter.isRegistered ? (
+                    <p className="registerText">You have registered yourself successfully.</p>
+                  ) : 
+                  null}
+
                 </form>
               </div>
             </div>
@@ -232,7 +238,7 @@ export default class Registration extends Component {
                 this.state.currentVoter.isRegistered
               )}
             </div>
-            {/* {this.state.isAdmin ? (
+            {this.state.isAdmin ? (
               <div
                 className="container-main"
                 style={{ borderTop: "1px solid" }}
@@ -242,19 +248,7 @@ export default class Registration extends Component {
 
               </div>
             ) : 
-            null} */}
-
-            {this.state.currentVoter.isRegistered ? (
-              <div
-                className="container-main"
-                style={{ borderTop: "1px solid" }}
-              >
-                <small>You have registered yourself successfully.</small>
-
-              </div>
-            ) : 
             null}
-
           </>
         )}
       </>
@@ -264,7 +258,7 @@ export default class Registration extends Component {
 export function loadCurrentVoter(voter, isRegistered) {
   return (
     <>
-      {/* <div
+      <div
         className={"container-item " + (isRegistered ? "success" : "attention")}
       >
         <center>Your Registered Info</center>
@@ -298,7 +292,7 @@ export function loadCurrentVoter(voter, isRegistered) {
             <td>{voter.isRegistered ? "True" : "False"}</td>
           </tr>
         </table>
-      </div> */}
+      </div>
     </>
   );
 }
@@ -306,7 +300,7 @@ export function loadAllVoters(voters) {
   const renderAllVoters = (voter) => {
     return (
       <>
-        {/* <div className="container-list success">
+        <div className="container-list attention">
           <table>
             <tr>
               <th>Account address</th>
@@ -333,15 +327,15 @@ export function loadAllVoters(voters) {
               <td>{voter.isRegistered ? "True" : "False"}</td>
             </tr>
           </table>
-        </div> */}
+        </div>
       </>
     );
   };
   return (
     <>
-      {/* <div className="container-item success">
+      <div className="container-item attention">
         <center>List of voters</center>
-      </div> */}
+      </div>
       {voters.map(renderAllVoters)}
     </>
   );

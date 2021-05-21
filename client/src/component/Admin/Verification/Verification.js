@@ -133,7 +133,7 @@ export default class Registration extends Component {
               <th>Phone</th>
               <td>{voter.phone}</td>
             </tr>
-            {/* <tr>
+            <tr>
               <th>Voted</th>
               <td>{voter.hasVoted ? "True" : "False"}</td>
             </tr>
@@ -144,7 +144,7 @@ export default class Registration extends Component {
             <tr>
               <th>Registered</th>
               <td>{voter.isRegistered ? "True" : "False"}</td>
-            </tr> */}
+            </tr>
           </table>
           <div style={{}}>
             <button
