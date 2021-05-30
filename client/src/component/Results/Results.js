@@ -150,9 +150,12 @@ function displayWinner(candidates) {
     }
     return winnerCandidate;
   };
+
+  const winnerBackground = "https://data.whicdn.com/images/245762463/original.gif";
+
   const renderWinner = (winner) => {
     return (
-      <div className="container-winner general">
+      <div style={{backgroundImage: "url(" + winnerBackground + ")", backgroundSize: "cover"}} className="container-winner general">
         <div className="winner-info">
           <p className="winner-tag">Winner!</p>
           <h2> {winner.header}</h2>
@@ -186,7 +189,7 @@ export function displayResults(candidates) {
       ) : null}
       <div className="container-main" style={{ borderTop: "1px solid" }}>
         <h2>Results</h2>
-        <small>Total candidates: {candidates.length}</small>
+        <small style={{color: "#111"}}>Total candidates: {candidates.length}</small>
         {candidates.length < 1 ? (
           <div className="container-item attention">
             <center>No candidates.</center>
@@ -200,6 +203,7 @@ export function displayResults(candidates) {
                   <th>Candidate</th>
                   <th>Votes</th>
                 </tr>
+                <tr></tr>
                 {candidates.map(renderResults)}
               </table>
             </div>

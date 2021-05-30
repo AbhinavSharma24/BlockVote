@@ -30,8 +30,8 @@ render() {
                 "random": false,
                 "anim": {
                   "enable": true,
-                  "speed": 1,
-                  "opacity_min": 0.1,
+                  "speed": 2,
+                  "opacity_min": 0.2,
                   "sync": false
                 }
               },
@@ -48,13 +48,13 @@ render() {
               "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#c8c8c8",
+                "color": "#8c8c8c",
                 "opacity": 0.4,
                 "width": 1
               },
               "move": {
                 "enable": true,
-                "speed": 1,
+                "speed": 2,
                 "direction": "none",
                 "random": false,
                 "straight": false,

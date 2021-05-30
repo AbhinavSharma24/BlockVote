@@ -120,21 +120,21 @@ code {
 } */
 
 .info {
-  background-image: linear-gradient(to right, #a1d69a, #c6ffdd, #a1d69a);
+  background-image: linear-gradient(to right, #a9dda2, #d4f8e3, #a9dda2);
 }
 .attention {
-  background-image: linear-gradient(to right, #eea374, #f7e598, #eea374);
+  background-image: linear-gradient(to right, #f8ccb1, #fdf1b8, #f8ccb1);
 }
 .success {
   background-color: #ddffdd;
 }
 
 .startBtn{
-  background-color: #fffbdd;
+  background-color: #a6c1d6;
   color: #1a1a1a;
   font-size: medium;
 }
 .startBtn:hover{
-  background-color: #1a1a1a;
+  background-color: #3a5569;
   color: #ddffdd;
 }

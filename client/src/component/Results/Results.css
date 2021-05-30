@@ -14,13 +14,13 @@ tr:nth-child(even) {
 }
 .container-winner {
   transition: ease all 0.75s;
-  background-color: #f5fffa;
+  background-color: #e9fff4;
   border-radius: 7px;
   width: 700px;
   padding: 25px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 17px;
+  margin-top: 0px;
   margin-bottom: 17px;
   overflow: auto;
 }
