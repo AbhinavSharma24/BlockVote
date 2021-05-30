@@ -293,7 +293,7 @@ export default class Home extends Component {
                           })}
                         />
                       </label>
-                      <label className="label-home">
+                      {/* <label className="label-home">
                         Location{" "}
                         {errors.organizationName && <EMsg msg="*required" />}
                         <input
@@ -304,7 +304,7 @@ export default class Home extends Component {
                             required: true,
                           })}
                         />
-                      </label>
+                      </label> */}
                     </div>
                   </div>
                 </div>

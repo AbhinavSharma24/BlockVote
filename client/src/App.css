@@ -29,7 +29,7 @@ code {
 
 .container-item {
   transition: ease all 0.5s;
-  background-color: #f2f2f2;
+  background-image: linear-gradient(to top, #aec5d6, #eef2f3);
   border-color: #1a1a1a;
   border: 1px;
   border-radius: 7px;
@@ -115,11 +115,15 @@ code {
   margin-top: 11px;
   margin-bottom: 11px px;
 }
-.info {
+/* .info {
   background-color: #ddffff;
+} */
+
+.info {
+  background-image: linear-gradient(to right, #a1d69a, #c6ffdd, #a1d69a);
 }
 .attention {
-  background-color: #fffbdd;
+  background-image: linear-gradient(to right, #eea374, #f7e598, #eea374);
 }
 .success {
   background-color: #ddffdd;

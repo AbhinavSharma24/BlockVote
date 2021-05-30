@@ -15,9 +15,10 @@ function UserHome(props) {
                 {props.el.adminName} ({props.el.adminTitle})
               </td>
             </tr>
+            <tr></tr>
             <tr>
-              <th style={{background: "#f2f2f2"}}>contact</th>
-              <td style={{ textTransform: "none", background: "#f2f2f2" }}>{props.el.adminEmail}</td>
+              <th>contact</th>
+              <td style={{ textTransform: "none" }}>{props.el.adminEmail}</td>
             </tr>
           </table>
         </div>
