@@ -123,31 +123,36 @@ export default class LearnMore extends Component {
                       <img className="img-fluid" src="https://www.aljazeera.com/wp-content/uploads/2021/04/AP_21096261246310.jpg?resize=1200%2C630"
                         alt="Voters standing in a queue to cast vote"/>
 
-                      <hr className="horBreak" style={{width: '50%'}}/>
+                      <hr className="horBreak" style={{width: '51%'}}/>
 
                       <br/>
-                      <p className="lead">Standing in the queue and waiting for your turn to cast vote is a part of a history now. </p>
-                      <br/>
-                      <p className="content1">We proposes a new system of voting where everything is transparent and there is no question
-                        of tampering, the voting machine as it doesn't exists in first place.</p>
-                      <br/>
-                      <p className="content1">BlockVote is the upcoming way of casting vote where all the votes will be stored in the Blockchain, which
-                        makes the system tamper proof and completely transparent.</p>
+
+                      <div className="containerLearnMore" >
+                        <p className="lead">Standing in the queue and waiting for your turn to cast vote is a part of a history now. </p>
+                        <br/>
+                        <p className="content1">We proposes a new system of voting where everything is transparent and there is no question
+                          of tampering, the voting machine as it doesn't exists in first place.</p>
+                        <br/>
+                        <p className="content1">BlockVote is the upcoming way of casting vote where all the votes will be stored in the Blockchain, which
+                          makes the system tamper proof and completely transparent.</p>
+                      </div>
 
                       <br/>
                       <div className="containerLearn2 general" role="alert">
-                        <span>This is still under various trials! Please expect a few bugs.</span>
+                        <span>BlockVote is still under development and various trials! Please expect a few bugs.</span>
                       </div>
                       <br/>
 
-                      <p className="lead2" >How to use?</p>
+                      <div className="containerLearnMore" >
+                        <p className="lead2" >How to use?</p>
 
-                      <p className="content1">1. Install MetaMask Browser Extension.</p>
-                      <p className="content1">2. Make sure that the Ethereum Account which you've been assigned is imported into MetaMask.</p>
-                      <p className="content1">3. Explore election section and cast your vote!</p>
-                      <p className="content1">Regards
-                      </p><br/>
-
+                        <p className="content1">1. Install MetaMask Browser Extension.</p>
+                        <p className="content1">2. Make sure that the Ethereum Account which you've been assigned is imported into &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; MetaMask.</p>
+                        <p className="content1">3. Explore election section and cast your vote!</p>
+                        <p style={{marginTop: "10px"}} className="content1">Regards
+                        </p>
+                      </div>
+                      <br/>
                     </div>
                   </div>
                 </div>    
